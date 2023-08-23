@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Viga";
+  text-decoration: none;
+}
+:root {
+  --body-baground: #083344;
+  --baground: #111827;
+  --text-steal: #5eead4;
+  --text-slate: #cbd5e1;
+}
+
+body {
+  background-color: var(--body-baground);
+}
+hr{
+  margin: 0;
+  color: var(--text-steal);
+}
+
+.box {
+  width: 380px;
+  height: 550px;
+  background: var(--baground);
+  border-radius: 10px;
+  margin-top: 7rem;
+  box-shadow: 0 0 20px var(--text-steal);
+  border-radius: 2rem;
+}
+@media max-width{
+
+}
+.box h2 {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-steal);
+}
+.box .inputan input {
+  border: none;
+  border-bottom: 2px solid var(--text-steal);
+  background-color: transparent;
+  border-radius: 0;
+  outline: none;
+  padding-left: 0;
+  color: #cbd5e1;
+}
+
+#email:focus,
+#password:focus,
+#Check:focus {
+  box-shadow: none;
+}
+#email {
+  margin-bottom: 10px;
+}
+#password {
+  margin-bottom: 5px;
+}
+
+input::placeholder {
+  font-size: 1.3rem;
+}
+.lupa-password {
+  cursor: pointer;
+  color: var(--text-steal);
+}
+.ingatkan-saya{
+  color: var(--text-steal);
+  
+}
+.form-group i{
+  color: var(--text-steal);
+  cursor: pointer;
+ font-weight: 200;
+}
+
+.mybtn {
+  padding-left: 8.5rem;
+  padding-right: 8.5rem;
+  border-radius: 15px;
+  margin-left: 22px;
+  background: var(--text-steal);
+  border-color: var(--text-slate);
+  transition: 0.3s ease-in-out;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.mybtn:hover {
+  background-color: var(--text-steal);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px var(--text-slate);
+}
+#bt:active {
+  background-color: var(--text-slate);
+  border-color: var(--text-steal);
+}
+
+#email::placeholder,
+#password::placeholder {
+  color: var(--text-slate);
+}
+.box p {
+  color: var(--text-slate);
+  margin-bottom: 1.5rem;
+}
+.box a {
+  color: var(--text-steal);
+  text-decoration: none;
+}
+.box h4 {
+  text-align: center;
+  color: var(--text-slate);
+}
+.icon {
+  animation: iconFloating 2s infinite ease-in-out;
+  margin-top: 1rem;
+}
+.icon a {
+  color: var(--text-steal);
+  font-size: 2.5rem;
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  box-shadow: 0 0px 10px var(--text-steal);
+  text-decoration: none;
+  margin: 0 10px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+.icon a .fa-brands {
+  font-size: 30px;
+  line-height: 45px;
+  z-index: 10;
+  bottom: 10px;
+  position: relative;
+  transition: color 0.5s;
+}
+.icon a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -90px;
+  left: 0;
+  background: linear-gradient(-30deg, var(--text-steal), var(--text-slate));
+  position: absolute;
+  transition: 0.5s;
+}
+.icon a:hover::after {
+  top: 0%;
+}
+
+.icon a:hover .fa-brands {
+  color: var(--body-baground);
+}
+.icon a:hover {
+  transform: translateY(-10px);
+}
+
+/* Efek Icons Melayang */
+@keyframes iconFloating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--text-slate);
+}
+
+
+
+
+
